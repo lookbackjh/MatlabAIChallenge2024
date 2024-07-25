@@ -65,12 +65,12 @@ run `regression_run.m` to check the result for Linear Regression
 
 - Bagging
 run `bag_run.m` to check the result for Bagging, it will automatically perform bayesian optimization and show the result for SHAP.
-\
+
 we have utilized `TreeBagger`  with Regression . 
 
 
 - Boosting 
 run `boost_run.m` to check the result for Boosting, it will automatically perform bayesian optimization and show the result.
-\ 
+
 we have utilized `fitrensemble` with Least Squrare Boosting. 
 
