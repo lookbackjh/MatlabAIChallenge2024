@@ -2,6 +2,7 @@
 
 ## 1. 데이터 설명
 
+`'final_new.csv'`
 총 1200 개의 랜덤으로 뽑힌 도로좌표로 구성한 헥사곤들에 대한 정보
 
 `'x'` :  도로x 좌표
@@ -56,14 +57,17 @@
 
 ## 2. Matlab Implementation
 
-- Our results are tested and built upon Matlab2024a 
-- Statistics and Machine Learning Toolbox are required to reproduce our code
+- Our results are tested and built upon **Matlab2024a** 
+- **Statistics and Machine Learning Toolbox** are required to reproduce our code
 
-- Linear Regression : run `regression_run.m` to check the result for Linear Regression 
-
-
-- Bagging : run `bag_run.m` to check the result for Bagging, it will automatically perform bayesian optimization and show the result for SHAP.(we have utilized `TreeBagger`  with Regression.) 
+- **Linear Regression** : run `regression_run.m` to check the result for Linear Regression 
 
 
-- Boosting : run `boost_run.m` to check the result for Boosting, it will automatically perform bayesian optimization and show the result.(we have utilized `fitrensemble` with Least Squrare Boosting. )
+- **Bagging** : run `bag_run.m` to check the result for Bagging, it will automatically perform bayesian optimization and show the result for SHAP.(we have utilized `TreeBagger`  with Regression.) 
+
+
+- **Boosting** : run `boost_run.m` to check the result for Boosting, it will automatically perform bayesian optimization and show the result.(we have utilized `fitrensemble` with Least Squrare Boosting. )
+
+- **SHAP Implementation**: since we have utilzied SHAP only for Bagging, check `bag_run.m` and change `explainer=fit(explainer,inputArg1([1],:));` to check for samples, 
+for example, if you want to see the explanability for multiple samples(1~100),  change the code to `explainer=fit(explainer,inputArg1([1:100],:));` (It might take a while based on your computer(CPU) performance. )
 
