@@ -56,16 +56,14 @@
 
 ## 2. Matlab Implementation
 
-Our results are tested and built upon Matlab2024a and Statistics and Machine Learning Toolbox are required to reproduce our code
+- Our results are tested and built upon Matlab2024a 
+- Statistics and Machine Learning Toolbox are required to reproduce our code
 
-- Linear Regression 
-run `regression_run.m` to check the result for Linear Regression 
-
-
-- Bagging
-run `bag_run.m` to check the result for Bagging, it will automatically perform bayesian optimization and show the result for SHAP.(we have utilized `TreeBagger`  with Regression.) 
+- Linear Regression : run `regression_run.m` to check the result for Linear Regression 
 
 
-- Boosting 
-run `boost_run.m` to check the result for Boosting, it will automatically perform bayesian optimization and show the result.(we have utilized `fitrensemble` with Least Squrare )Boosting. 
+- Bagging : run `bag_run.m` to check the result for Bagging, it will automatically perform bayesian optimization and show the result for SHAP.(we have utilized `TreeBagger`  with Regression.) 
+
+
+- Boosting : run `boost_run.m` to check the result for Boosting, it will automatically perform bayesian optimization and show the result.(we have utilized `fitrensemble` with Least Squrare Boosting. )
 
